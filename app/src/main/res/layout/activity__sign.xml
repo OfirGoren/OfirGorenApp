@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="25dp">
+
+
+        <TextView
+            android:id="@+id/sign_LBL_title_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Sign In"
+            android:textColor="@color/electric_blue"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        // linearLayout one
+
+        <LinearLayout
+            android:id="@+id/sign_linearLayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_LBL_title_sign_in"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_LBL_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name:"
+                    android:textColor="@color/electric_blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/sign_EDT_add_first_name"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@color/lighter_gray"
+                    android:textColor="@color/dark_electric_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_BTN_clear_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/custom_button"
+                android:shadowColor="@color/electric_blue"
+                android:text="@string/Clear"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        // linearLayout two
+
+        <LinearLayout
+            android:id="@+id/sign_linearLayout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_linearLayout_one"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_LBL_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sign_LBL_title_sign_in"
+                    android:text="Last Name:"
+                    android:textColor="@color/electric_blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/sign_EDT_add_last_name"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:background="@color/lighter_gray"
+                    android:textColor="@color/dark_electric_blue"
+                    android:textSize="20sp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_BTN_clear_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/custom_button"
+                android:shadowColor="@color/electric_blue"
+                android:text="@string/Clear"
+                android:textColor="@color/white"
+
+                />
+
+
+        </LinearLayout>
+        // linearLayout three
+
+        <LinearLayout
+            android:id="@+id/sign_linearLayout_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_linearLayout_two"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_LBL_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sign_LBL_title_sign_in"
+                    android:text="Password:"
+                    android:textColor="@color/electric_blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <EditText
+                    android:id="@+id/sign_EDT_add_password"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/sign_LBL_first_name"
+                    android:background="@color/lighter_gray"
+                    android:textColor="@color/dark_electric_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_BTN_clear_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/custom_button"
+                android:shadowColor="@color/electric_blue"
+                android:text="@string/Clear"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_BTN_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_linearLayout_three"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/custom_button"
+            android:text="connect"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

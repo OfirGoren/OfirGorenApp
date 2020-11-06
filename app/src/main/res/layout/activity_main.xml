@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/main_LBL_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/itim"
+            android:text="Let's plant with us!"
+            android:textColor="@color/electric_blue"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/main_LBL_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_LBL_title"
+            android:layout_centerHorizontal="true"
+            android:text="Bring nature home"
+            android:textColor="@color/dark_electric_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_IMG_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/main_LBL_sub_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="160dp"
+            android:src="@drawable/plant" />
+
+        <Button
+            android:id="@+id/main_BTN_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_IMG_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-150dp"
+            android:background="@drawable/custom_button"
+            android:paddingHorizontal="80dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/main_BTN_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_BTN_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:stateListAnimator="@null"
+            android:text="create an account"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_electric_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_BTN_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_BTN_create_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@color/white"
+            android:stateListAnimator="@null"
+            android:text="Forgot Password?"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_electric_blue" />
+    </RelativeLayout>
+</ScrollView>
